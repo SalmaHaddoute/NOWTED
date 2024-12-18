@@ -1,0 +1,162 @@
+/* Container principal */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px; /* Largeur de la barre latérale */
+    background-color: #0f0f0f; /* Gris foncé pour la barre latérale */
+    color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.search-icon {
+    height: 24px;
+    cursor: pointer;
+}
+
+.new-note-button {
+    margin: 16px 0;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #2d2f36; /* Gris sombre */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-note-button:hover {
+    background-color: #333333; /* Plus clair au survol */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.section {
+    padding: 8px 16px;
+}
+
+.section-title {
+    color: #a0aec0; /* Gris clair pour les titres de section */
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.folder-list {
+    list-style: none;
+    padding: 0;
+}
+
+.folder-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: #e2e8f0;
+}
+
+.folder-item:hover {
+    background-color: #2d2f36; /* Gris sombre au survol */
+    transform: translateY(-2px);
+}
+
+.folder-icon {
+    height: 20px;
+    margin-right: 8px;
+}
+
+.note-list-container {
+    width: 350px;  /* Réduisez la largeur selon votre besoin */
+    background-color: #151515;
+    border-left: 1px solid transparent;
+    color: #e2e8f0;
+    padding: 16px;
+    font-family: serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-center;
+    overflow-y: auto;
+}
+
+
+.folder-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f7fafc; /* Blanc cassé pour le titre */
+    margin-bottom: 16px;
+    border-bottom: 2px solid #444; /* Ligne décorative */
+    padding-bottom: 8px;
+}
+
+.note-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.note-item {
+    padding: 12px; /* Taille plus compacte */
+    border: 1px solid #0f0f0f; /* Bordure gris foncé */
+    border-radius: 6px; /* Coins arrondis */
+    margin-bottom: 8px;
+    background-color: #262525; /* Fond gris intermédiaire */
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.note-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Légère ombre */
+}
+
+.empty-message,
+.select-folder-message {
+    color: #a0aec0; /* Texte gris clair */
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* Scrollbar for Notes */
+.note-list-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.note-list-container::-webkit-scrollbar-thumb {
+    background-color: #1d1c1c; /* Gris sombre pour le défileur */
+    border-radius: 8px;
+}
+
+.note-list-container::-webkit-scrollbar-track {
+    background-color: #060607; /* Fond du défileur */
+}

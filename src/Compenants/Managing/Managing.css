@@ -1,0 +1,127 @@
+    .sidebar {
+        height: 100vh;
+        width: 100%;
+        background-color: #000000; /* Dark gray */
+        color: #a0aec0; /* Light gray text */
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+        font-family: serif;
+        border: transparent;
+    }
+    .container{
+        width: 100%;
+        margin: 0%;
+    }
+    .new-note-input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    
+    /* Header Styles */
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .logo {
+        height: 2rem;
+    }
+    
+    .icon {
+        height: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .search-icon {
+        height: 1.25rem;
+    }
+    
+    /* Button Styles */
+    .new-note-btn {
+        margin: 0 1rem;
+        background-color: #5a67d8; /* Indigo */
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    .new-note-btn:hover {
+        background-color: #434190; /* Darker indigo */
+    }
+    
+    .add-icon {
+        margin-right: 0.5rem;
+        height: 1rem;
+    }
+    
+    /* Section Styles */
+    .section {
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .section-title {
+        color: #718096; /* Muted gray */
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .add-folder-icon {
+        height: 1rem;
+    }
+    
+    /* List Item Styles */
+    .sidebar-item {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .sidebar-item:hover {
+        background-color: #2d3748; /* Dark hover */
+    }
+    
+    
+    .sidebar-item .icon {
+        margin-right: 0.5rem;
+        height: 1.25rem;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        }
+    
+        .new-note-btn {
+        width: 100%;
+        justify-content: center;
+        }
+    }
+    

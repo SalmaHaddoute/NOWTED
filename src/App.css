@@ -1,0 +1,65 @@
+*{
+    color: white;
+}
+.layout {
+    display: flex; /* Utilise Flexbox pour aligner les composants */
+    width: 100vw; /* Prend toute la largeur de l'écran */
+    height: 100vh; /* Prend toute la hauteur de l'écran (facultatif) */
+    }
+    
+    .layout > div {
+        height: 100%; /* Chaque composant prend toute la hauteur disponible */
+    }
+    
+    .layout > div:nth-child(1) {
+        flex: 1; /* Managing : 1/4 de l'espace */
+        border-radius: 0;
+    }
+    
+    .layout > div:nth-child(2) {
+        flex: 1; /* FolderNote : 1/4 de l'espace */
+        border-radius: 0;
+    }
+    
+    .layout > div:nth-child(3) {
+        flex: 2; /* Note : 2/4 (50%) de l'espace */
+        border-radius: 0;
+        background-color: rgb(13, 13, 13);
+    }
+    .notification {
+        position: fixed;
+        top: 50%; /* Centre verticalement */
+        left: 50%; /* Centre horizontalement */
+        transform: translate(-50%, -50%); /* Ajustement pour un centrage parfait */
+        background-color: #5a67d8; /* Violet */
+        color: white;
+        width: 360px; /* Largeur fixée */
+        height: auto; /* Hauteur basée sur le contenu */
+        max-height: 60px; /* Hauteur maximale */
+        padding: 10px; /* Ajustement interne pour l'espacement */
+        border-radius: 20px; /* Bord arrondi pour un effet moderne */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        font-size: 14px; /* Taille du texte ajustée */
+        display: flex; /* Centrage du contenu */
+        align-items: center; /* Centrer verticalement */
+        justify-content: center; /* Centrer horizontalement */
+        text-align: center;
+        animation: fade-in 0.5s ease-in-out;
+        box-sizing: border-box; /* Inclut padding et bordure dans la largeur/hauteur */
+    }
+    
+    
+    
+    
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translate(-50%, 10px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+    }
+    
+    
